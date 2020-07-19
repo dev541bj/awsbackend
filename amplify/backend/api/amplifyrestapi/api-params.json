@@ -1,0 +1,49 @@
+{
+    "paths": [
+        {
+            "name": "/people",
+            "lambdaFunction": "amplifyrestapifunction",
+            "privacy": {
+                "open": true
+            }
+        },
+        {
+            "name": "/events",
+            "lambdaFunction": "amplifyrestapifunction",
+            "privacy": {
+                "open": true
+            }
+        },
+        {
+            "name": "/events2",
+            "lambdaFunction": "amplifyrestapifunction",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "amplifyrestapi",
+    "apiName": "amplifyrestapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "amplifyrestapifunction"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-repoaws-dev-224151-authRole",
+        "unAuthRoleName": "amplify-repoaws-dev-224151-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "amplifyrestapifunction",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ],
+    "uuid": "c4a01875"
+}
